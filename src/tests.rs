@@ -1,3 +1,4 @@
+//module defined in lib.rs
 use super::*;
 
 #[test]
