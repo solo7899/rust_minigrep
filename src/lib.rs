@@ -39,6 +39,18 @@ impl Config {
             ignore_case,
         })
     }
+
+    pub fn query(&self) -> &String {
+        &self.query
+    }
+
+    pub fn file_path(&self) -> &String {
+        &self.file_path
+    }
+
+    pub fn ignore_case(&self) -> &bool {
+        &self.ignore_case
+    }
 }
 pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
     let mut results = Vec::new();
