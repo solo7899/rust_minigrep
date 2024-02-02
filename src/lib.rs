@@ -20,9 +20,9 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
 }
 
 pub struct Config {
-    pub query: String,
-    pub file_path: String,
-    pub ignore_case: bool,
+    query: String,
+    file_path: String,
+    ignore_case: bool,
 }
 
 impl Config {
